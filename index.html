@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121311">
+  <meta name="description" content="镜序 Shotflow：把现有剧本整理成可编辑的文字分镜、AI 生图提示词与视频提示词。支持角色库、空间光线预设、集场管理、中英文提示词、本地保存与 JSON / CSV 导入导出。">
+  <title>镜序 Shotflow · 短剧分镜工作台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23dfb774'/%3E%3Cpath d='M11 12h10v5h8v11H19v-5h-8z' fill='%23121311'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./workspace.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <input type="file" id="file-input" accept=".docx,.doc,.txt,.md,.json,text/plain,application/json,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+</body>
+</html>
